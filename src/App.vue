@@ -41,6 +41,10 @@
 import { Bars3Icon } from '@heroicons/vue/24/solid'
 
 export default {
+  name: "App",
+  mounted() {
+        document.title = "Kill Gosling";
+            },
   data: () => {
     return {
       mobile: null,
@@ -49,6 +53,13 @@ export default {
     };
   },
   methods: {
+    isMobile() {
+      if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        this.mobile = true;
+        } else {
+          this.mobile = true
+        }
+      },
     toggleMobileNav() {
       this.mobileNav = !this.mobileNav
     },
@@ -63,7 +74,6 @@ export default {
     }
   },
   components: { Bars3Icon },
-
   created() {
     window.addEventListener('resize', this.checkScreen);
     this.checkScreen;
@@ -139,7 +149,7 @@ body {
   position: fixed;
   align-items: start;
   width: 100%;
-  max-width: 350px;
+  max-width: 310px;
   height: 100%;
   background-color: black;
   top: 0;
@@ -191,5 +201,9 @@ body {
 
 .open {
   transform: translateX(300px);
+}
+
+@media only screen and (max-width: 1000px){
+  
 }
 </style>
