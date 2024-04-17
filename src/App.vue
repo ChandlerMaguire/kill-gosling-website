@@ -8,11 +8,12 @@
         <RouterLink class="mobile-menu-item" to="/live" @click="toggleMobileNav">Live</RouterLink>
         <RouterLink class="mobile-menu-item" to="/about" @click="toggleMobileNav">About</RouterLink>
         <RouterLink class="mobile-menu-item" to="/contact" @click="toggleMobileNav">Contact</RouterLink>
+        <x-mark-icon class="close-icon" @click="toggleMobileNavOff"/>
       </div>
     </div>
     <div id="mobile-nav-container" v-if="mobile">
-      <RouterLink to="/"><img class="mobile-banner-image" src="@/assets/img/kg-ransom-logo.png" v-show="!mobileNav"></RouterLink>
-      <bars-3-icon class="nav-icon" @click="toggleMobileNav"/>
+      <RouterLink to="/"><img class="mobile-banner-image" src="@/assets/img/kg-ransom-logo.png"></RouterLink>
+      <bars-3-icon class="nav-icon" @click="toggleMobileNav" v-show="!mobileNav"/>
     </div>
     <div id="browser-nav-container" v-if="!mobile">
       <RouterLink to="/"><img class="browser-banner-image" src="@/assets/img/kg-ransom-logo.png"></RouterLink>
@@ -25,8 +26,8 @@
       </div>
     </div>
   </div>
-  <div class="container">
-    <RouterView/>
+  <div class="container" @click="toggleMobileNavOff">
+    <RouterView />
     <footer>
       <h4 class="footer-text">Follow KG:</h4>
       <div class="socials-container">
@@ -38,7 +39,7 @@
 </template>
 
 <script>
-import { Bars3Icon } from '@heroicons/vue/24/solid'
+import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/solid'
 
 export default {
   name: "App",
@@ -52,6 +53,9 @@ export default {
   methods: {
     toggleMobileNav() {
       this.mobileNav = !this.mobileNav
+    },
+    toggleMobileNavOff() {
+      this.mobileNav = false;
     },
     checkScreen() {
       this.windowWidth = window.innerWidth;
@@ -67,11 +71,11 @@ export default {
         document.title = "Kill Gosling";
         this.$nextTick(this.checkScreen());
             },
-  components: { Bars3Icon },
-  computed() {
-    window.addEventListener('resize', this.checkScreen);
-    this.checkScreen;
-  }
+            computed() {
+              window.addEventListener('resize', this.checkScreen);
+              this.checkScreen;
+            },
+  components: { Bars3Icon, XMarkIcon },
 }
 </script>
 
@@ -136,19 +140,31 @@ body {
   width: 3rem;
 }
 
+.close-icon {
+  float: right;
+  position: absolute;
+  right: 0;
+  margin-right: 17px;
+  margin-top: 350px;
+  width: 3rem;
+  font-size: 50px;
+  color: #ffb6c7;
+}
+
 /* mobile */
 .mobile-menu {
   display: flex;
   flex-direction: column;
   position: fixed;
-  align-items: start;
+  align-items: end;
   width: 100%;
-  max-width: 310px;
+  max-width: 250px;
   height: 100%;
   background-color: black;
   top: 0;
-  left: 0;
+  right: 0;
   margin-right: -4px;
+  z-index: 16;
 }
 
 .mobile-menu-item {
@@ -156,7 +172,7 @@ body {
   font-size: 50px;
   color: #ffb6c7;
   text-decoration: none;
-  margin-right: 5px;
+  margin-right: 20px;
   padding-top: 10px;
   margin-left: 20px;
 }
@@ -165,6 +181,7 @@ body {
   display: inline-block;
   margin-bottom: 4rem;
   margin-top: -10vw;
+  z-index: 10;
 }
 
 .mobile-banner-image {
@@ -197,7 +214,4 @@ body {
   transform: translateX(300px);
 }
 
-@media only screen and (max-width: 1000px){
-  
-}
 </style>
