@@ -145,7 +145,7 @@ body {
   position: absolute;
   right: 0;
   margin-right: 17px;
-  margin-top: 350px;
+  margin-top: 355px;
   width: 3rem;
   font-size: 50px;
   color: #ffb6c7;

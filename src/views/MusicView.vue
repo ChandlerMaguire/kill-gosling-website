@@ -1,5 +1,5 @@
 <template>
-  <h1>New EP 'Waster' out  4/24/2024<br>via We're Trying Records</h1>
+  <h1>New EP 'Waster' out  now<br>via We're Trying Records</h1>
   <img class="waster-art" src="../assets/img/waster-cover-art.png">
   <h2>Stream Kill Gosling:</h2>
   <div class="streaming-links-container">
