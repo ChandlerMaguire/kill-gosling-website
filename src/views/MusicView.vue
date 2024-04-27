@@ -20,7 +20,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.waster-art {
+.waster-art {                         
   display: block;
   margin-left: auto;
   margin-right: auto;

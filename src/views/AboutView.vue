@@ -6,7 +6,7 @@
     <p class="bio-text">Ohio via New Jersey heavyweights KILL GOSLING have been releasing music since 2021, and their latest offering and second EP Waster can be found on We’re Trying Records, a home for kitschy, homespun emotional tunes from the Midwest and beyond. Beginning as a solo acoustic project, vocalist and project figurehead Chandler J.M has enlisted some of Columbus’ best and brightest to propel the group into one of the tightest, flashiest, and most memorable bands around. 
 <br>
 <br>
-Waster, the latest and most fully realized effort from the band, is packed with thick, dense sound recorded by guitarist Violet Eadie and ear catching poppy production courtesy of booked-and-busy scene vet Will Killingsworth. The band doesn’t waste a second of the tight near 10 minute runtime, kicking off with a blink-and-you-'ll-miss-it drum fill leading straight into verse one of “Bobby Hobby,” a floaty doo-wop-style opener that's in and out with two verses, two choruses, and a solo in less than a minute and a half. 
+Waster, the latest and most fully realized effort from the band, is packed with thick, dense sound recorded by guitarist Violet Eadie and ear catching poppy mastering courtesy of booked-and-busy scene vet Will Killingsworth. The band doesn’t waste a second of the tight near 10 minute runtime, kicking off with a blink-and-you-'ll-miss-it drum fill leading straight into verse one of “Bobby Hobby,” a floaty doo-wop-style opener that's in and out with two verses, two choruses, and a solo in less than a minute and a half. 
 <br>
 <br>
 Touring around the Midwest in the coming months, with no plans of letting up, any summer plans that don’t involve Kill Gosling need updated. 
